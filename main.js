@@ -151,7 +151,7 @@ app.on("ready", () => {
 
 // update app handler
 require("update-electron-app")({
-  repo: "https://github.com/loopteam0/",
+  repo: "https://github.com/loopteam0/*git repo*",
   // onecheck for updates weeek
   updateInterval: "168 hours"
 });
