@@ -5,15 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ElectronService } from './services/electron.service';
+import { HomeComponent } from './components/home/home.component';
+import { NgMaterialModule } from './modules/ng-material/ng-material.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgMaterialModule
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]
